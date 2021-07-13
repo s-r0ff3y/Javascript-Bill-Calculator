@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Project 2 - Bill Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1 style="background-color: white;">Tip Calculator</h1>
+        <p style="background-color: white;">How much was your bill?</p>
+        £  <input type="text" id="total" placeholder="Bill Amount">
+        <p style="background-color: white;">How was your service?</p>
+        <select id="service">
+            <option value="0">-- Choose an Option --</option>
+            <option value=0.3>Excellent 30%</option>
+            <option value=0.2>Good 20%</option>
+            <option value=0.15>Average 15%</option>
+            <option value=0.1>Below Average 10%</option>
+            <option value=0.05>Awful 5%</option>
+        </select>
+        <p style="background-color: white;">How many people are sharing the bill?</p>
+        <input type="text" id="people_no" placeholder="Number of People">  People
+        <br>
+        <button onclick="workout()">Calculate!</button>
+        <p style="background-color: white;" id="amount"></p>
+    </div>
+</body>
+</html>
